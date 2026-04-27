@@ -27,5 +27,10 @@ form.addEventListener('submit',(e) => {
         li.textContent = loisir[i].value;
         resultat.appendChild(li);
     }
+    //initialisation
+    document.querySelector("#nom").value = '';
+    document.querySelector("#age").value = '';
+    document.querySelector("#pays").value = '';
+    document.querySelector('#commentaire').value = '';
 })
 
