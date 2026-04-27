@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Menu -->
+    <div class="px-6 py-4 bg-blue-600 text-white">
+        <button class="font-bold text-xl text-left">
+            <a href="../index.html">Menu</a>
+        </button>
+    </div>
+
+    <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-2xl font-bold mb-4 text-gray-800">Formulaire d'inscription</h2>
+        <form action="" id="formulaire" class="space-y-4">
+            <label for="nom" class="block text-gray-700 font-medium">
+                Nom: <input type="text" id="nom" required  
+                        class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none">
+            </label><br>
+            <!-- Age -->
+            <label for="age" class="block text-gray-700 font-medium">
+                Age: <input type="number" id="age" required
+                         class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none">
+            </label>
+            <!-- Sexe -->
+            <fieldset>
+                <legend class="text-gray-700 font-medium">Sexe</legend>
+                <div class="flex items-center space-x-4 mt-2">
+                    <label class="flex items-center space-x-2">
+                        <input type="radio" name="sexe" value="Homme" checked class="text-blue-600">
+                        <span>Homme</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                        <input type="radio" name="sexe" value="Femme" class="text-blue-600">
+                        <span>Femme</span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- Loisirs -->
+            <div>
+                <label class="block text-gray-700 font-medium">Loisirs</label>
+                <div class="flex flex-col space-y-2 mt-2">
+                <label class="flex items-center space-x-2">
+                    <input type="checkbox" name="loisir" value="Sport" class="text-blue-600">
+                    <span>Sport</span>
+                </label>
+                <label class="flex items-center space-x-2">
+                    <input type="checkbox" name="loisir" value="Lecture" class="text-blue-600">
+                    <span>Lecture</span>
+                </label>
+                <label class="flex items-center space-x-2">
+                    <input type="checkbox" name="loisir" value="Musique" class="text-blue-600">
+                    <span>Musique</span>
+                </label>
+                </div>
+            </div>
+
+             <!-- Pays -->
+            <div>
+                <label for="pays" class="block text-gray-700 font-medium">Pays</label>
+                <select id="pays"
+                        class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                <option value="">-- Choisir un pays --</option>
+                <option value="senegal">Senegal</option>
+                <option value="gambie">Gambie</option>
+                <option value="mauritanie">Mauritanie</option>
+                </select>
+            </div>
+
+            <!-- Commentaire -->
+            <div>
+                <label for="commentaire" class="block text-gray-700 font-medium">Commentaire</label>
+                <textarea id="commentaire" rows="4"
+                        class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"></textarea>
+            </div> 
+
+            <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700">
+                Envoyer
+            </button>
+        </form>
+    </div>
+</body>
+</html>

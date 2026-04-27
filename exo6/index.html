@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do list</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex-col min-h-screen">
+    <!-- Menu -->
+    <div class="px-6 py-4 bg-blue-600 text-white flex justify-between items-center">
+        <a href="../index.html" class="font-bold text-xl">Menu</a>
+        <h1 class="font-bold text-xl">To-Do List</h1>
+    </div>
+    <!-- Utilisateurs -->
+    <div id="user" class="max-w-md mx-auto mt-6 bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-lg font-semibold mb-4">Utilisateurs</h2>
+        <ul id="listUser" class="list-disc pl-5 mb-4"></ul>
+        <div class="flex space-x-2">
+            <input type="text" id="username" placeholder="Nom Utilisateur"
+                    class="flex-1 p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500">
+            <button id="btnUser" class="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-blue-700">Ajouter</button>
+        </div>
+    </div>
+    <!-- Taches -->
+    <div id="tache" class="max-w-md mx-auto mt-6 bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-lg font-semibold mb-4">Taches</h2>
+        <ul id="listTache" class="list-disc pl-5 mb-4"></ul>
+        <div class="flex space-x-2">
+            <input type="text" id="newTache" placeholder="Nouvelle tache"
+                    class="flex-1 p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500">
+            <button id="btnTache" class="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-blue-700">Ajouter</button>
+        </div>
+    </div>
+</body>
+</html>
