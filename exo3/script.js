@@ -10,14 +10,22 @@ form.addEventListener('submit',(e) => {
     let commentaire = document.querySelector('#commentaire').value;
     let loisir = document.querySelectorAll("input[name=loisir]:checked");
 
-    console.log(nom);
-    console.log(age);
-    console.log(sexe);
-    console.log(pays);
-    console.log(commentaire);
-    for(let i=0;i<loisir.length; i++){
-        console.log(loisir[i].value);
-    }
     
+    
+    let resultat = document.querySelector('#resultat');
+
+    let h1 = document.createElement('h1');
+    h1.textContent = 'Resultat du formulaire';
+    resultat.appendChild(h1);
+
+    let p = document.createElement('p');
+    p.textContent = nom+ ' ' + age + ' ' +sexe +' ' + pays + ' ' +commentaire;
+    resultat.appendChild(p);
+
+    for(let i=0;i<loisir.length; i++){
+        let li = document.createElement('li');
+        li.textContent = loisir[i].value;
+        resultat.appendChild(li);
+    }
 })
 
