@@ -1,11 +1,5 @@
 # TP HTML · CSS · JavaScript : DEV DATA P8
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)
-![Sans dépendance](https://img.shields.io/badge/build-aucun-success)
-
 Travaux pratiques réalisés à l'**Orange Digital Center** (programme *DEV DATA P8*).
 Six exercices progressifs qui couvrent les fondamentaux du développement web front-end, de la structure d'une page HTML jusqu'à une application de gestion de tâches complète avec persistance locale.
 
@@ -19,8 +13,6 @@ Six exercices progressifs qui couvrent les fondamentaux du développement web fr
 - [Structure du projet](#structure-du-projet)
 - [Notions de recherche](#notions-de-recherche)
 - [Choix techniques et bonnes pratiques](#choix-techniques-et-bonnes-pratiques)
-- [Tester manuellement](#tester-manuellement)
-- [Pistes d'amélioration](#pistes-damélioration)
 - [Auteur](#auteur)
 
 ## Aperçu
