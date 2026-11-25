@@ -7,3 +7,11 @@
     border: 20px;
     background-color: aquamarine;
 }
+
+li button{
+    width: 5rem;
+    background-color: blue;
+    float: right;
+    border-radius: 1rem;
+    color: whitesmoke;
+}
